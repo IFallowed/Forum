@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body {
+	height:100%;
+	background-color: #DCDCDC;
+}
+body,ul,li,div {
+	margin: 0px;
+	padding: 0px;
+}
+.lf {
+	float: left;
+}
+.rf {
+	float: right;
+}
+.clearfix:after {
+	content: ".";
+	display: block;;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix {
+	zoom:1;
+}
+.div_hidden {
+	display: none;
+}
+a,a:hover {
+	text-decoration: none;
+}
+.mid_container {
+	margin: 0px auto;
+	width: 1200px;
+}

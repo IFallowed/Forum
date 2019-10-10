@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.content_tab li{
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom:2px;
+	border: 1px solid #FFFFFF;
+}
+.content_tab a {
+	color: #000000;
+}
+.tab_li_click {
+	color: #009688 !important;
+	border-bottom: 5px solid #009688;
+}
+#myInfo {
+}
+.form_group {
+	margin-top: 40px;
+	margin-bottom:-20px;
+	width:340px;
+	height: 40px;
+}
+.form_group label {
+	text-align: center;
+	width:110px;
+	height:35px;
+	line-height: 38px;
+	background-color:#FBFBFB;
+	border: 1px solid #EEEEEE;
+	font-size: 14px;
+	font-stretch: 100%;
+	font-style: normal;
+	font-weight: 400;
+}
+.form_group input {
+	float: right;
+	width:230px;
+	height: 35px;
+	border: 1px solid #EEEEEE;
+}
