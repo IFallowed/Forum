@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .left_nav {
 	width:200px;
-	height:770px;;
+	height:600px;;
 	background-color: #393D49;
 	padding-top: 20px;
 }
@@ -35,8 +35,8 @@
 	height: auto;
 }
 .content {
-	width:980px;
-	height:800px;
+	width:960px;
+	height:600px;
 	background-color: #FFFFFF;
 	padding: 20px;
 }

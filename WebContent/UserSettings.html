@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基本设置</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/UserNav.js"></script>
+<link rel="stylesheet" type="text/css" href="css/Frame.css">
+<link rel="stylesheet" type="text/css" href="css/UserNav.css">
+<link rel="stylesheet" type="text/css" href="css/UserSettings.css">
+</head>
+<body>
+	<div class="header">
+		<i class="logo"></i>
+		<label class="user">用户名</label>
+		<i class="avatar"></i>
+	</div>
+	<div class="mid_container clearfix">
+		<div class="left_nav lf">
+			<ul>
+				<li>
+					<a href="#">我的主页</a>
+				</li>
+				<li>
+					<a href="#">用户中心</a>
+				</li>
+				<li class="li_bg_col">
+					<a href="UserSettings.jsp">基本设置</a>
+				</li>
+				<li>
+					<a href="UserInfo.jsp">我的消息</a>
+				</li>
+				<li>
+					<a href="#">账户充值/会员</a>
+				</li>
+			</ul>
+		</div>
+		<div class="content rf">
+			<div class="content_tab">
+				<ul id="tab_ul" class="nav nav-tabs">
+					<li class="active">
+						<a href="#myInfo" data-toggle="tab">
+							我的资料
+						</a>
+					</li>
+					<li>
+						<a href="#avatar" data-toggle="tab">
+							头像
+						</a>
+					</li>
+					<li>
+						<a href="#pwd" data-toggle="tab">
+							密码
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div id="myInfo" class="tab-pane fade in active">
+					<form role="form" action="#">
+						<div class="form_group clearfix">
+							<label for="settings_mail">邮箱：</label>
+							<input type="email" id="settings_mail" placeholder="固定值不可更改" readonly="readonly">
+						</div>
+						<div class="form_group clearfix">
+							<label for="settings_name">昵称：</label>
+							<input type="text" id="settings_name" placeholder="">
+						</div>
+						<div class="form_radio clearfix">
+								<label for="male"><input type="radio" name="sex" id="male" value="male" checked="checked">男</label>
+			        			<label for="female"><input type="radio" name="sex" id="female" value="female">女</label>
+							</div>
+						<div class="form_group clearfix">
+							<label for="settings_phone">手机：</label>
+							<input type="text" id="settings_phone" placeholder="">
+						</div>
+						<div class="form_group clearfix">
+							<label for="settings_city">城市：</label>
+							<input type="text" id="settings_city" placeholder="">
+						</div>
+						<div class="signature_group clearfix">
+							<label for="settings_signature">签名：</label>
+							<textarea rows="7" cols="15" id="settings_signature" placeholder="随便写些什么刷下存在感"></textarea>
+						</div>
+						<div class="form_group clearfix">
+		    			<input type="submit" id="settings_btn" class="btn btn-success onHover active" value="确认修改">
+	  					</div>
+					</form>
+				</div>
+				<div id="avatar" class="tab-pane fade">
+					<input type="button" id="avatar_load_btn" class="btn btn-success onHover active" value="上传头像">
+					<p>建议尺寸168*168，支持jpg、png、gif，最大不能超过50KB</p>
+					<input type="file">
+					<i></i>
+				</div>
+				<div id="pwd" class="tab-pane fade">
+					<form role="form" action="#">
+						<div class="form_group clearfix">
+							<label for="old_pwd">当前密码：</label>
+							<input type="email" id="old_pwd" placeholder="">
+						</div>
+						<div class="form_group clearfix">
+							<label for="old_pwd">新密码：</label>
+							<input type="text" id="old_pwd" placeholder="">
+						</div>
+						<div class="msg">
+							6-16位字母数字组合
+						</div>
+						<div class="form_group clearfix">
+							<label for="comfirm_pwd">确认密码：</label>
+							<input type="text" id="comfirm_pwd" placeholder="">
+						</div>
+						<div class="form_group clearfix">
+		    			<input type="submit" id="pwd_btn" class="btn btn-success onHover active" value="确认修改">
+	  					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$("input[type='button']").click(function(){
+				$("input[type='file']").click();
+			});
+		});
+	</script>
+</body>
+</html>

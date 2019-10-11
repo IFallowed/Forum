@@ -4,6 +4,9 @@ body,div,ul,li{
 	margin: 0px;
 	padding: 0px;
 }
+input {
+	outline: none !important;
+}
 
 /** 封装浮动 */
 .lf {
@@ -106,8 +109,15 @@ input[type="radio"] {
 	width: 50px;
 	height:30px;
 	float: left;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	font-stretch: 100%;
+	font-style: normal;
+	font-weight: 400;
+	zoom:80%;
 }
 .radio_label{
-	margin-left: -170px;
+	margin-left: -190px;
 	margin-right: 40px;
 }
