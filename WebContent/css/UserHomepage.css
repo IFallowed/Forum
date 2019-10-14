@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.myInfo {
+	width: 100%;
+	height: 300px;
+	background-color: #FFF;
+	padding: 30px 200px 30px 200px;
+	position: relative;
+	text-align: center;
+}
+.my_avatar {
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+}
+.myName {
+	font-size: 26px;
+	padding-left: 30px;
+}
+.myCreate,.mySignature {
+	color: #999999;
+}
+.myQuestion,.myAnswer {
+	width:580px;
+	height:600px;
+	background-color: #FFFFFF;
+}
+.content_header {
+	width: 580px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom:1px solid #EEEEEE;
+	padding-left: 20px;
+}
+.content_body {
+	position: relative;
+}
+.content_body p{
+	color:#999999;
+	position: absolute;
+	top: 60px;
+	left: 234px;
+}

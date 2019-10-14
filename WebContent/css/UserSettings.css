@@ -1,19 +1,4 @@
 @charset "UTF-8";
-.content_tab li{
-	width: 100px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	margin-bottom:2px;
-	border: 1px solid #FFFFFF;
-}
-.content_tab a {
-	color: #000000;
-}
-.tab_li_click {
-	color: #009688 !important;
-	border-bottom: 5px solid #009688;
-}
 #myInfo {
 	position: relative;
 }
@@ -137,7 +122,7 @@ input[type="file"] {
 #pwd {
 	position: relative;
 }
-.msg{
+.msg {
 	width:140px;
 	height:40px;
 	text-align: left;

@@ -38,8 +38,7 @@ a,a:hover {
     border-bottom: 1px solid #404553;
     border-right: 1px solid #404553;
     background-color: #393D49;
-    margin-bottom: 20px;
-    position: relative;
+	position: relative;
 }
 .logo {
 	background-image: url("../img/logo.png");
@@ -74,6 +73,13 @@ a,a:hover {
 	border-radius: 20px;
 }
 .mid_container {
-	margin: 0px auto;
+	margin: 20px auto 0 auto;
 	width: 1180px;
 }
+.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+

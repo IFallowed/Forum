@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的帖子</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/UserNav.js"></script>
+<link rel="stylesheet" type="text/css" href="css/Frame.css">
+<link rel="stylesheet" type="text/css" href="css/UserNav.css">
+<link rel="stylesheet" type="text/css" href="css/UserPost.css">
+</head>
+<body>
+	<div class="header">
+		<i class="logo"></i>
+		<label class="user">用户名</label>
+		<i class="avatar"></i>
+	</div>
+	<div class="mid_container clearfix">
+		<div class="left_nav lf">
+			<ul>
+				<li>
+					<a href="UserHomepage.html">我的主页</a>
+				</li>
+				<li>
+					<a href="#">用户中心</a>
+				</li>
+				<li>
+					<a href="UserSettings.html">基本设置</a>
+				</li>
+				<li>
+					<a href="UserMessage.html">我的消息</a>
+				</li>
+				<li class="li_bg_col">
+					<a href="UserPost.html">我的帖子</a>
+				</li>
+			</ul>
+		</div>
+		<div class="content rf">
+			<div class="content_tab">
+				<ul id="tab_ul" class="nav nav-tabs">
+					<li class="active">
+						<a href="#myPosts" data-toggle="tab">
+							我发的贴
+						</a>
+					</li>
+					<li>
+						<a href="#collectPosts" data-toggle="tab">
+							我收藏的贴
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div id="myPosts" class="tab-pane fade in active">
+					<table >
+						<tr class="table_title">
+							<td class="post_title">帖子标题</td>
+							<td class="post_state">状态</td>
+							<td class="post_finish">结帖</td>
+							<td class="post_issuingTime">发表时间</td>
+							<td class="post_data">数据</td>
+							<td class="post_operate">操作</td>
+						</tr>
+						<tr>
+							<td class="table_placeHolder" colspan="6">
+								无数据
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="collectPosts" class="tab-pane fade">
+					<table>
+						<tr class="table_title">
+							<td class="post_title lengthen">帖子标题</td>
+							<td class="post_collectTime">收藏时间</td>
+						</tr>
+						<tr>
+							<td class="table_placeHolder" colspan="2">
+								无数据
+							</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
