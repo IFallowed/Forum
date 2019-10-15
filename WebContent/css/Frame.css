@@ -54,22 +54,34 @@ a,a:hover {
 	top:10px;
 	left: 160px;
 }
+.header_nav {
+	width:320px;
+	height:60px;
+	position: absolute;
+	top: 0px;
+	left:400px;
+}
 .header_nav li {
-	width:100px;
+	width:80px;
 	height:60px;
 	text-align:center;
 	line-height:60px;
 	font-size: 16px;
 	color: #FFFFFF;
-	opacity: .80;
+	opacity: .65;
+	list-style-type: none;
+	margin-right: 25px;
 }
-.header_nav span {
-	height:60px;
+.header_nav li:hover {
+	opacity: .99;
+	cursor: pointer;
+}
+.header_nav svg{
+	margin-top: 17px;
 }
 .icon_size {
 	width: 25px !important;
 	height: 25px !important;
-	margin-top: 20px;
 }
 .user {
 	width:80px;
@@ -103,5 +115,7 @@ a,a:hover {
        vertical-align: -0.15em;
        fill: currentColor;
        overflow: hidden;
-    }
-
+}
+.li_color {
+	color: #009688 !important;
+}

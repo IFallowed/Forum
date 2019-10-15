@@ -9,14 +9,35 @@
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/UserNav.js"></script>
-<link rel="stylesheet" type="text/css" href="css/Frame.css">
-<link rel="stylesheet" type="text/css" href="css/UserNav.css">
-<link rel="stylesheet" type="text/css" href="css/UserPost.css">
+<script type="text/javascript" src="../../js/UserNav.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/Frame.css">
+<link rel="stylesheet" type="text/css" href="../../css/UserNav.css">
+<link rel="stylesheet" type="text/css" href="../../css/UserPost.css">
+<script src="https://at.alicdn.com/t/font_1457444_10ldj8elo38p.js"></script>
 </head>
 <body>
 	<div class="header">
 		<i class="logo"></i>
+		<ul class="header_nav clearfix">
+			<li class="lf">
+				<svg class="icon icon_size" aria-hidden="true" >
+					<use xlink:href="#icon_white_jiaoliu"></use>
+				</svg>
+				<p class="rf">交流</p>
+			</li>
+			<li class="lf">
+				<svg class="icon icon_size" aria-hidden="true" >
+					<use xlink:href="#icon_chanpin"></use>
+				</svg>
+				<p class="rf">专区</p>
+			</li>
+			<li class="lf">
+				<svg class="icon icon_size" aria-hidden="true" >
+					<use xlink:href="#icon_ui"></use>
+				</svg>
+				<p class="rf">框架</p>
+			</li>
+		</ul>
 		<label class="user">用户名</label>
 		<i class="avatar"></i>
 	</div>
@@ -44,7 +65,7 @@
 			<div class="content_tab">
 				<ul id="tab_ul" class="nav nav-tabs">
 					<li class="active">
-						<a href="#myPosts" data-toggle="tab">
+						<a href="#myPosts" class="li_color" data-toggle="tab">
 							我发的贴
 						</a>
 					</li>
