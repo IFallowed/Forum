@@ -6,6 +6,8 @@
 	padding: 30px 200px 30px 200px;
 	position: relative;
 	text-align: center;
+	margin-top: 60px;
+	margin-bottom: -60px;
 }
 .my_avatar {
 	width: 120px;
