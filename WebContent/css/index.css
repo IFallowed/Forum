@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+li {
+	list-style-type: none;
+}
 .top_container {
 	width: 100%;
 	height: 50px;
@@ -40,4 +44,83 @@
 #submitPost:hover {
 	cursor: pointer;
 	opacity: .80;
+}
+.mid_container a {
+	color: #000000;
+}
+.left_content {
+	width: 780px;
+	height: 800px;
+}
+.right_content {
+	width: 380px;
+	height: 800px;
+	background-color: #FFFFFF;
+}
+.top_post {
+	width: 780px;
+	height: 130px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+}
+.top_lab {
+	width: 780px;
+	height: 51px;
+	padding-left: 20px;
+	line-height: 50px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.post_content {
+	width: 780px;
+	height: 700px;
+	background-color: #FFFFFF;
+}
+.post_nav {
+	width: 780px;
+	height: 51px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.post_li {
+	width: 780px;
+	height: 76px;
+	padding:15px 215px 15px 20px;
+	border-bottom: 1px solid #EEEEEE;
+	position: relative;
+}
+.post_li img {
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+.post_info {
+	width: 680px;
+	height: 45px;
+	font-size: 16px;
+	position: absolute;
+	top:15px;
+	left:85px;
+}
+.post_info p {
+	margin-bottom: 5px;
+}
+.post_type {
+	width:34px;
+	height:18px;
+	color: #5FB878;
+	font-size: 12px;
+	text-align: center;
+	line-height: 16px;
+	border-radius: 2px;
+	border: 1px solid #5FB878;
+	margin-right: 15px;
+	display: inline-block;
+}
+.post_title:hover,.post_userName:hover {
+	color: #009688;
+	cursor: pointer;
+}
+.post_userName,.post_publishTime,.post_replyNum{
+	font-size: 12px;
+	color:#999999;
+	margin-right: 20px;
 }

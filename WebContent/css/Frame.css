@@ -4,7 +4,7 @@ body {
 	background-color: #EEEEEE;
 	position: relative;
 }
-body,ul,li,div {
+body,ul,li,div,p{
 	margin: 0px;
 	padding: 0px;
 }
@@ -88,10 +88,12 @@ a,a:hover {
 	height:40px;
 	position: absolute;
 	left: 1200px;
-	color: #FFFFFF;
 	text-align: center;
 	line-height: 60px;
 	opacity: .80;
+}
+.user a {
+	color: #FFFFFF ;
 }
 .user:hover {
 	opacity: .99;
