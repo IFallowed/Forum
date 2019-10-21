@@ -1,0 +1,3 @@
+user: id mail password nickName sex phone city signature avatar
+Theme_post: id title  userId tab content state(置顶 加精 已结 未结) 
+			collectNum replyNum browseNum time 

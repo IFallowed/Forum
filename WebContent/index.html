@@ -11,11 +11,11 @@
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/Frame.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
-<script src="https://at.alicdn.com/t/font_1457444_vb44vsfc91i.js"></script>
+<script src="https://at.alicdn.com/t/font_1457444_n4pzqtsz54.js"></script>
 </head>
 <body>
 	<div class="header">
-		<i class="logo"></i>
+		<a href="index.html"><i class="logo"></i></a>
 		<ul class="header_nav clearfix">
 			<li class="lf">
 				<svg class="icon icon_size" aria-hidden="true" >
@@ -42,19 +42,19 @@
 	<div class="top_container clearfix">
 		<ul class="top_nav lf clearfix">
 			<li class="li_color">首页</li>
-			<li>提问</li>
-			<li>分享</li>
-			<li>讨论</li>
-			<li>建议</li>
-			<li>公告</li>
-			<li>动态</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JAVASCRIPT</li>
+			<li>JQUERY</li>
+			<li>AJAX</li>
+			<li>前端框架</li>
 		</ul>
 		<p class="lf">|</p>
 		<ul class="top_nav rf_nav lf clearfix">
 			<li>我发表的贴</li>
 			<li>我收藏的贴</li>
 		</ul>
-		<button id="submitPost" class="btn btn-success rf active">发表新帖</button>
+		<button id="submitPost" class="btn btn-success rf active" onclick="javaScript:location.href='PublishPost.html'">发表新帖</button>
 		<svg class="icon icon_size rf" aria-hidden="true" >
 			<use xlink:href="#icon_sousuo"></use>
 		</svg>
@@ -72,13 +72,19 @@
 							<p>
 								<span class="post_type">提问</span>
 								<a><span class="post_title">帖子主题</span></a>
-								<span class="post_type">精贴</span>
+								<span class="post_excellent">精贴</span>
 							</p>
 							<p class="clearfix">
 								<a><span class="post_userName">用户名</span></a>
 								<span class="post_publishTime" >2小时前</span>
 								<span class="post_replyNum rf">
-									<svg class="icon icon_size" aria-hidden="true" >
+									<svg class="icon icon_min_size" aria-hidden="true" >
+										<use xlink:href="#icon_liulan"></use>
+									</svg>
+									1
+								</span>
+								<span class="post_replyNum rf">
+									<svg class="icon icon_min_size" aria-hidden="true" >
 										<use xlink:href="#icon_discuss"></use>
 									</svg>
 									1
@@ -90,7 +96,13 @@
 			</div>
 			<div class="post_content">
 				<div class="post_nav">
-					
+					<a href="#" class="li_color">综合</a>
+					|
+					<a href="#">未结</a>
+					|
+					<a href="#">已结</a>
+					|
+					<a href="#">精华</a>
 				</div>
 				<ul>
 					<li class="post_li clearfix">
@@ -104,7 +116,13 @@
 								<a><span class="post_userName">用户名</span></a>
 								<span class="post_publishTime" >2小时前</span>
 								<span class="post_replyNum rf">
-									<svg class="icon icon_size" aria-hidden="true" >
+									<svg class="icon" aria-hidden="true" >
+										<use xlink:href="#icon_liulan"></use>
+									</svg>
+									1
+								</span>
+								<span class="post_replyNum rf">
+									<svg class="icon" aria-hidden="true" >
 										<use xlink:href="#icon_discuss"></use>
 									</svg>
 									1

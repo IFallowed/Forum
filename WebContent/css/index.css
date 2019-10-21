@@ -10,11 +10,11 @@ li {
 	line-height: 50px;
 	margin-top: 60px;
 	margin-bottom: -60px;
-	padding-left: 140px;
+	padding-left: 90px;
 }
 .top_nav li {
 	float: left;
-	width: 70px;
+	width: 100px;
 	height: 50px;
 	text-align: center;
 	list-style-type: none;
@@ -37,7 +37,7 @@ li {
 #submitPost {
 	width: 90px;
 	height:40px;
-	margin-right: 200px;
+	margin-right: 120px;
 	margin-top: 5px;
 	background-color: #009688;
 }
@@ -79,6 +79,18 @@ li {
 	width: 780px;
 	height: 51px;
 	border-bottom: 1px solid #EEEEEE;
+	line-height: 50px;
+	color: #ECECEC;
+	padding-left: 10px;
+}
+.post_nav a{
+	color: #666666;
+	font-size: 14px;
+	margin: 0 10px 0 10px;
+}
+.post_nav a:hover,.post_title:hover,.post_userName:hover {
+	color: #009688;
+	cursor: pointer;
 }
 .post_li {
 	width: 780px;
@@ -103,7 +115,7 @@ li {
 .post_info p {
 	margin-bottom: 5px;
 }
-.post_type {
+.post_type,.post_excellent {
 	width:34px;
 	height:18px;
 	color: #5FB878;
@@ -114,10 +126,6 @@ li {
 	border: 1px solid #5FB878;
 	margin-right: 15px;
 	display: inline-block;
-}
-.post_title:hover,.post_userName:hover {
-	color: #009688;
-	cursor: pointer;
 }
 .post_userName,.post_publishTime,.post_replyNum{
 	font-size: 12px;

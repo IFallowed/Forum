@@ -8,7 +8,7 @@ body,ul,li,div,p{
 	margin: 0px;
 	padding: 0px;
 }
-input {
+input{
 	outline: none !important;
 }
 .lf {
@@ -79,15 +79,12 @@ a,a:hover {
 .header_nav svg{
 	margin-top: 17px;
 }
-.icon_size {
-	width: 25px !important;
-	height: 25px !important;
-}
+
 .user {
 	width:80px;
 	height:40px;
 	position: absolute;
-	left: 1200px;
+	left: 1150px;
 	text-align: center;
 	line-height: 60px;
 	opacity: .80;
@@ -105,7 +102,7 @@ a,a:hover {
 	height:40px;
 	position: absolute;
 	top:10px;
-	left: 1300px;
+	left: 1250px;
 	border-radius: 20px;
 }
 .mid_container {
@@ -113,10 +110,15 @@ a,a:hover {
 	width: 1180px;
 }
 .icon {
-       width: 1em; height: 1em;
+       width: 1em; 
+       height: 1em;
        vertical-align: -0.15em;
        fill: currentColor;
        overflow: hidden;
+}
+.icon_size {
+	width: 25px !important;
+	height: 25px !important;
 }
 .li_color {
 	color: #009688 !important;
