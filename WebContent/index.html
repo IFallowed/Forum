@@ -39,6 +39,7 @@
 		<label class="user"><a href="html/user/UserSettings.html">用户名</a></label>
 		<i class="avatar"></i>
 	</div>
+	
 	<div class="top_container clearfix">
 		<ul class="top_nav lf clearfix">
 			<li class="li_color">首页</li>
@@ -54,11 +55,12 @@
 			<li>我发表的贴</li>
 			<li>我收藏的贴</li>
 		</ul>
-		<button id="submitPost" class="btn btn-success rf active" onclick="javaScript:location.href='PublishPost.html'">发表新帖</button>
+		<button id="submitPost" class="btn btn-success rf active" onclick="javaScript:location.href='html/post/PublishPost.html'">发表新帖</button>
 		<svg class="icon icon_size rf" aria-hidden="true" >
 			<use xlink:href="#icon_sousuo"></use>
 		</svg>
 	</div>
+	
 	<div class="mid_container clearfix">
 		<div class="left_content lf">
 			<div class="top_post">
@@ -70,12 +72,12 @@
 						<a href="#"><img id="user_avatar" src="img/0.jpg"></a>
 						<div class="post_info">
 							<p>
-								<span class="post_type">提问</span>
-								<a><span class="post_title">帖子主题</span></a>
-								<span class="post_excellent">精贴</span>
+								<span class="post_state">完结</span>
+								<a href="html/post/PostDetail.html"><span class="post_title">帖子主题</span></a>
+								<span class="post_state">精贴</span>
 							</p>
 							<p class="clearfix">
-								<a><span class="post_userName">用户名</span></a>
+								<a  href="#"><span class="post_userName">用户名</span></a>
 								<span class="post_publishTime" >2小时前</span>
 								<span class="post_replyNum rf">
 									<svg class="icon icon_min_size" aria-hidden="true" >
@@ -109,11 +111,11 @@
 						<a href="#"><img id="user_avatar" src="img/0.jpg"></a>
 						<div class="post_info">
 							<p>
-								<span class="post_type">提问</span>
-								<a><span class="post_title">帖子主题</span></a>
+								<span class="post_state">未结</span>
+								<a href="html/post/PostDetail.html"><span class="post_title">帖子主题</span></a>
 							</p>
 							<p class="clearfix">
-								<a><span class="post_userName">用户名</span></a>
+								<a href="#"><span class="post_userName">用户名</span></a>
 								<span class="post_publishTime" >2小时前</span>
 								<span class="post_replyNum rf">
 									<svg class="icon" aria-hidden="true" >

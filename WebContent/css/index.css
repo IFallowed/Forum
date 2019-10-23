@@ -1,49 +1,6 @@
 @charset "UTF-8";
-
 li {
 	list-style-type: none;
-}
-.top_container {
-	width: 100%;
-	height: 50px;
-	background-color: #FFFFFF;
-	line-height: 50px;
-	margin-top: 60px;
-	margin-bottom: -60px;
-	padding-left: 90px;
-}
-.top_nav li {
-	float: left;
-	width: 100px;
-	height: 50px;
-	text-align: center;
-	list-style-type: none;
-}
-.top_nav li:hover,.top_container svg:hover {
-	color: #009688;
-	cursor: pointer;
-}
-.rf_nav li {
-	width: 100px !important;
-}
-.top_container > p {
-	width: 70px;
-	text-align: center;
-}
-.top_container svg {
-	margin-top: 12px;
-	margin-right: 30px;
-}
-#submitPost {
-	width: 90px;
-	height:40px;
-	margin-right: 120px;
-	margin-top: 5px;
-	background-color: #009688;
-}
-#submitPost:hover {
-	cursor: pointer;
-	opacity: .80;
 }
 .mid_container a {
 	color: #000000;
@@ -115,7 +72,7 @@ li {
 .post_info p {
 	margin-bottom: 5px;
 }
-.post_type,.post_excellent {
+.post_state{
 	width:34px;
 	height:18px;
 	color: #5FB878;

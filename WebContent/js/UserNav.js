@@ -7,8 +7,8 @@ $(function(){
 	});
 	$(".content_tab a").each(function(){
 		$(this).click(function(){
-			$(this).addClass("tab_li_click");
-			$(this).parent().siblings().children("a").removeClass("tab_li_click");
+			$(this).addClass("li_color");
+			$(this).parent().siblings().children("a").removeClass("li_color");
 		});
 	});
 });
