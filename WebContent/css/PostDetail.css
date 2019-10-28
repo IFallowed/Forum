@@ -40,6 +40,10 @@ li {
 	background-color: #5FB878;
 	padding: 2px 5px 2px 5px;
 }
+.post_browseNum,.post_replyNum,.post_likeNum,.post_replyNum {
+	margin-right:20px;
+	color: #999;
+}
 .icon_mid_size {
 	width: 16px !important;
 	height: 16px !important;
@@ -86,8 +90,8 @@ li {
 .post_content {
 	width: 740px;
 	height: auto;
-	margin-top:30px;
-	margin-bottom:20px;
+	margin: 30px 0 20px 0;
+	padding: 0 15px;
 	outline: none;
 	border: none;
 	
@@ -128,4 +132,11 @@ li {
 .icon_size_40 {
 	width: 70px !important;
 	height: 70px !important;
+}
+.reply_post_li li{
+	border-bottom: 1px solid #EEE;
+}
+.post_likeNum,.post_replyNum {
+	cursor: pointer;
+	margin-bottom: 10px;
 }
