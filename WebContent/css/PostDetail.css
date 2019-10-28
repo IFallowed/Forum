@@ -3,7 +3,7 @@ li {
 	list-style-type: none;
 }
 .mid_container a {
-	color: #000000;
+	color: #000;
 }
 .left_content {
 	width: 780px;
@@ -13,22 +13,22 @@ li {
 .right_content {
 	width: 380px;
 	height: 800px;
-	background-color: #FFFFFF;
+	background-color: #FFF;
 }
 .theme_post {
 	width: 780px;
 	height: auto;
 	padding: 20px;
 	margin-bottom: 20px;
-	background-color: #FFFFFF;
+	background-color: #FFF;
 }
-.theme_post span {
-	color: #999999;
+.theme_post span,.reply_userInfo span {
+	color: #999;
 }
 .post_type {
 	width: auto;
 	height: 20px;
-	border: 1px solid #EEEEEE;
+	border: 1px solid #EEE;
 	padding: 2px 5px 2px 5px;
 	border-radius: 2px;
 	margin-right: 5px;
@@ -47,18 +47,18 @@ li {
 .post_userInfo {
 	width: 740px;
 	height: 76px;
-	background-color: #EEEEEE;
+	background-color: #EEE;
 	margin-top: 20px;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDD;
 	padding: 15px 20px 15px 20px;
 	position: relative;
 }
-.post_userInfo img {
+.post_userInfo img,.reply_userInfo img {
 	width: 45px;
 	height: 45px;
 	cursor: pointer;
 }
-.post_userInfo p {
+.post_userInfo p,.reply_userInfo p {
 	width: 685px;
 	height: 45px;
 	position: absolute;
@@ -70,7 +70,7 @@ li {
 	width: 740px;
 	height: 51px;
 	padding: 10px 20px 10px 20px;
-	background-color: #EEEEEE;
+	background-color: #EEE;
 }
 #collect_btn {
 	width: 60px;
@@ -83,23 +83,49 @@ li {
 	cursor: pointer;
 	opacity: .80;
 }
-.theme_post textarea {
+.post_content {
 	width: 740px;
-	height: 250px;
+	height: auto;
 	margin-top:30px;
 	margin-bottom:20px;
 	outline: none;
 	border: none;
 	
 }
-.reply_post {
+.reply_posts {
 	width: 780px;
 	height: auto;
-	background-color: #FFFFFF;
-} 
-.reply_post fieldset {
-	width: 780px;
-	height: 30px;
-	font-size:24px;
+	background-color: #FFF;
+	padding: 15px 20px 15px 20px;
+}
+.reply_post_head {
+	width: 740px;
+	height: 40px;
 	text-align: center;
+} 
+.reply_post_head .line {
+    width: 340px;
+    border-top: 1px solid #ccc ;
+    display: inline-block;
+}
+.reply_post_head .txt {
+	font-size:24px;
+	color: #666;
+	vertical-align: -20%;
+}
+.reply_userInfo {
+	width: 740px;
+	height: 76px;
+	margin-top: 20px;
+	padding: 15px 20px 15px 20px;
+	position: relative;
+}
+.reply_userInfo svg {
+	position: absolute;
+	top:15px;
+	left: 500px;
+}
+.icon_size_40 {
+	width: 70px !important;
+	height: 70px !important;
 }
