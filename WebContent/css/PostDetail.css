@@ -68,7 +68,16 @@ li {
 	position: absolute;
 	top:15px;
 	left:85px;
-	
+}
+.post_gold {
+	color:#FF7200;
+	position: absolute !important;
+	top:40px !important;
+	left: 85px !important;
+
+}
+.post_gold span {
+	color:#FF7200;
 }
 .post_collect {
 	width: 740px;
@@ -139,4 +148,11 @@ li {
 .post_likeNum,.post_replyNum {
 	cursor: pointer;
 	margin-bottom: 10px;
+}
+#post_editor{
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+#reply_userName{
+	color:#01AAED;
 }

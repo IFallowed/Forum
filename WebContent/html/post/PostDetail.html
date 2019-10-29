@@ -11,8 +11,9 @@
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../../css/Frame.css">
 <link rel="stylesheet" type="text/css" href="../../css/PostDetail.css">
-<script src="../../js/PostDetail.js"></script>
+
 <script src="https://at.alicdn.com/t/font_1457444_lagt3y38ltc.js"></script>
+<script src="https://unpkg.com/wangeditor/release/wangEditor.min.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -84,10 +85,12 @@
 				</div>
 				<div class="post_userInfo">
 					<a href="#"><img id="user_avatar" src="../../img/0.jpg"></a>
-					<p class="clearfix">
+					<p class=" clearfix">
 						<a href="#"><span class="post_userName">用户名</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
 						<span class="post_publishTime" >2小时前</span>
+						<p class="post_gold">悬赏:<span>10</span>金币</p>
 					</p>
+					
 				</div>
 				<div class="post_collect clearfix">
 					<button id="collect_btn" class="btn btn-success rf active">收藏</button>
@@ -123,37 +126,66 @@
 									<use xlink:href="#icon_yicaina"></use>
 								</svg>
 							</div>
-							<p class="post_content" readonly="readonly">
+							<p class="post_content" contenteditable="false">
 								帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
 							</p>
 							<div class="reply_operation clearfix">
-								<span class="post_likeNum rf">
-									<svg class="icon icon_size" aria-hidden="true" >
-										<use xlink:href="#icon_nogood"></use>
-									</svg>
-									1
-								</span>
-								<span class="post_replyNum rf">
-									<svg class="icon icon_size" aria-hidden="true" >
-										<use xlink:href="#icon_discuss"></use>
-									</svg>
-									1
-								</span>
+								<a href="#">
+									<span class="post_likeNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_nogood"></use>
+										</svg>
+										1
+									</span>
+								</a>
+								<a href="#toReply">
+									<span class="post_replyNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_discuss"></use>
+										</svg>
+										12
+									</span>
+								</a>
 							</div>
    						</li>
    						<li>
    							<div class="reply_userInfo">
 								<a href="#"><img id="user_avatar" src="../../img/0.jpg"></a>
 								<p class="clearfix">
-									<a href="#"><span class="post_userName">用户名</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#"><span class="post_userName">用户名2</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
 									<span class="post_publishTime" >2小时前</span>
 								</p>
 							</div>
-							<p class="post_content" readonly="readonly">
-								帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+							<p class="post_content" contenteditable="false">
+								极度不适
 							</p>
+							<div class="reply_operation clearfix">
+								<a href="#">
+									<span class="post_likeNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_nogood"></use>
+										</svg>
+										1
+									</span>
+								</a>
+								<a href="#toReply">
+									<span class="post_replyNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_discuss"></use>
+										</svg>
+										12
+									</span>
+								</a>
+							</div>
    						</li>
    					</ul>
+   					<form action="#" >
+   					<a name = toReply></a>
+   						<div id="post_editor">
+						</div>
+			    		<script src="../../js/PostDetail.js"></script>
+			    		<input type="submit" id="submit_post" class="btn btn-success active" value="立即发布">
+   					</form>
    				</div>
 			</div>
 		</div>
