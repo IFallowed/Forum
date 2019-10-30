@@ -99,6 +99,12 @@ input {
 	color:#C0C0C0;
 	text-align: left;
 }
+.form_info div {
+	width:40px !important;
+	height:28px !important;
+	background-image: url("../img/sprite.png");
+}
+
 #login_btn,#register_btn {
 	float:left !important;
 	width:160px !important;

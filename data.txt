@@ -1,5 +1,5 @@
-user: id 邮箱 密码 昵称 性别 手机 城市 签名 头像 创建时间
-theme_post: id 标题  userId 标签 文本内容 状态(置顶 加精 已结 未结) 
+user: id 邮箱 密码 昵称 性别 手机 城市 签名 头像 金币 创建时间
+theme_post: id 标题  userId 标签 文本内容 状态(置顶 加精 已结 未结) 悬赏
 			收藏数 回复数 浏览量 发表时间 
 reply_post: id userId replyId  文本内容  状态（采纳） 点赞 回复数 发表时间
 
