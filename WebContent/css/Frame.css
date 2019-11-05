@@ -28,7 +28,7 @@ input{
 	zoom:1;
 }
 .div_hidden {
-	display: none;
+	visibility: hidden;
 }
 a,a:hover {
 	text-decoration: none !important;

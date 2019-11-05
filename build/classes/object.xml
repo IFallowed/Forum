@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="tx" class="com.jdbc.util.Transaction" />
+	<bean id="userDao" class="com.forum.dao.impl.UserDaoImpl" />
+	<bean id="userService" class="com.forum.service.impl.UserServiceImpl">
+		<property name="tx" ref="tx"></property>
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+	
+	<bean id="userAction" class="com.forum.action.UserAction">
+		<property name="userService" ref="userService"></property>
+	</bean>
+</beans>

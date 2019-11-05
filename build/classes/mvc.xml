@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<package name="user">
+		<action name="regist" class="userAction" method="regist">
+			<result name="success" type="stream">/Login.html</result>
+		</action>
+		<action name="login" class="userAction" method="login">
+			<result name="success" type="stream">/Login.html</result>
+		</action>
+		<action name="getUser" class="userAction" method="getUser">
+			<result name="success" type="stream">/index.html</result>
+		</action>
+		
+	</package>
+</mvc>

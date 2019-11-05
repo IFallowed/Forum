@@ -9,4 +9,33 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- 监听器 -->
+  <listener>
+  		<listener-class>com.mvc.listener.MVCListener</listener-class>
+  </listener>
+  
+  <!-- 字符编码过滤器 -->
+  <filter>
+  		<filter-name>characterEncodingFilter</filter-name>
+  		<filter-class>com.mvc.filter.CharacterEncodingFilter</filter-class>
+  		<init-param>
+  			<param-name>encoding</param-name>
+  			<param-value>UTF-8</param-value>
+  		</init-param>
+  </filter>
+  <filter-mapping>
+  		<filter-name>characterEncodingFilter</filter-name>
+  		<url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  
+  <!-- 前端请求拦截器 -->
+  <servlet>
+  		<servlet-name>dispatcherServlet</servlet-name>
+  		<servlet-class>com.mvc.util.DispatcherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>dispatcherServlet</servlet-name>
+  		<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
 </web-app>
