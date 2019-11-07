@@ -131,4 +131,22 @@ public class UserServiceImpl implements UserService {
 		}
 	}
 
+	/**
+	 * @see com.forum.service.UserService#updateUser(com.forum.entity.User)
+	 * @param user
+	 */
+	@Override
+	public void updateUser(User user) {
+		//开启事务
+		tx.beginTX();
+		try {
+			userDao.updateById(user);
+			tx.commit();
+		} catch (SQLException e) {
+			//回滚，打印错误日志
+			tx.rollBack();
+			LogUtil.error(e.getMessage());
+		}
+	}
+
 }

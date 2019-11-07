@@ -17,7 +17,7 @@
 <script type="text/javascript" src="../../js/UserSettings.js"></script>
 
 </head>
-<body onload="initLoad()">
+<body >
 	<div class="header">
 		<a href="../../index.html"><i class="logo"></i></a>
 		<ul class="header_nav clearfix">
@@ -116,27 +116,34 @@
 					</form>
 				</div>
 				<div id="avatar" class="tab-pane fade">
-					<input type="button" id="avatar_load_btn" class="btn btn-success onHover active" value="上传头像">
+					<input type="button" id="avatar_select_btn" class="btn btn-success onHover active" value="选择文件">
 					<p>建议尺寸168*168，支持jpg、png、gif，最大不能超过50KB</p>
 					<input type="file">
 					<i></i>
+					<input type="button" id="avatar_load_btn" class="btn btn-success onHover active" value="上传头像">
 				</div>
 				<div id="pwd" class="tab-pane fade">
 					<form role="form" action="#">
 						<div class="form_group clearfix">
 							<label for="old_pwd">当前密码：</label>
 							<input type="email" id="old_pwd" placeholder="">
+							<div class="msg">
+							6-16位字母数字组合
+							</div>
 						</div>
 						<div class="form_group clearfix">
 							<label for="old_pwd">新密码：</label>
 							<input type="text" id="old_pwd" placeholder="">
-						</div>
-						<div class="msg">
+							<div class="msg">
 							6-16位字母数字组合
+							</div>
 						</div>
 						<div class="form_group clearfix">
 							<label for="comfirm_pwd">确认密码：</label>
 							<input type="text" id="comfirm_pwd" placeholder="">
+							<div class="msg">
+							6-16位字母数字组合
+							</div>
 						</div>
 						<div class="form_group clearfix">
 		    			<input type="submit" id="pwd_btn" class="btn btn-success onHover active" value="确认修改">

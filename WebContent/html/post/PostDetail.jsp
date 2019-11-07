@@ -1,0 +1,200 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	<%@ taglib uri="http://java.sun.com/jstl/fmt" prefix="fmt" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/Frame.css">
+<link rel="stylesheet" type="text/css" href="../../css/PostDetail.css">
+
+<script src="https://at.alicdn.com/t/font_1457444_lagt3y38ltc.js"></script>
+<script src="https://unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+</head>
+<body onload="initLoad()">
+	<div class="header">
+		<a href="../../index.html"><i class="logo"></i></a>
+		<ul class="header_nav clearfix">
+			<li class="lf">
+				<svg class="icon icon_size" aria-hidden="true" >
+					<use xlink:href="#icon_white_jiaoliu"></use>
+				</svg>
+				<p class="rf">交流</p>
+			</li>
+			<li class="lf">
+				<svg class="icon icon_size" aria-hidden="true" >
+					<use xlink:href="#icon_chanpin"></use>
+				</svg>
+				<p class="rf">专区</p>
+			</li>
+			<li class="lf">
+				<svg class="icon icon_size" aria-hidden="true" >
+					<use xlink:href="#icon_ui"></use>
+				</svg>
+				<p class="rf">框架</p>
+			</li>
+		</ul>
+		<label class="user"><a href="Login.jsp">用户名</a></label>
+		<i class="avatar"></i>
+		<img class="avatar" src="${pageContext.request.contextPath}/userAvatar/${user.avatar}"></img>
+		<label class="quit div_hidden"><a href="Login.jsp">退出</a></label>
+	</div>
+	
+	<div class="top_container clearfix">
+		<ul class="top_nav lf clearfix">
+			<li class="li_color">首页</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JAVASCRIPT</li>
+			<li>JQUERY</li>
+			<li>AJAX</li>
+			<li>前端框架</li>
+		</ul>
+		<p class="lf">|</p>
+		<ul class="top_nav rf_nav lf clearfix">
+			<li>我发表的贴</li>
+			<li>我收藏的贴</li>
+		</ul>
+		<button id="submitPost" class="btn btn-success rf active" onclick="javaScript:location.href='PublishPost.jsp?userId=${user.id}'">发表新帖</button>
+		<svg class="icon icon_size rf" aria-hidden="true" >
+			<use xlink:href="#icon_sousuo"></use>
+		</svg>
+	</div>
+	
+	<div class="mid_container clearfix">
+		<div class="left_content lf">
+			<div class="theme_post">
+				<h1>${themePost.title }</h1>
+				<div class="clearfix">
+					<span class="post_type ">${themePost.type }</span>
+					<span class="post_state">${themePost.state }</span>
+					<span class="post_browseNum rf">
+						<svg class="icon icon_mid_size" aria-hidden="true" >
+							<use xlink:href="#icon_liulan"></use>
+						</svg>
+					${themePost.browseNum } 
+					</span>
+					<span class="post_replyNum rf">
+						<svg class="icon icon_mid_size" aria-hidden="true" >
+							<use xlink:href="#icon_discuss"></use>
+						</svg>
+					${themePost.replyNum }
+					</span>
+				</div>
+				<div class="post_userInfo">
+					<a href="#"><img id="user_avatar" src="../../img/0.jpg"></a>
+					<p class=" clearfix">
+						<a href="#"><span class="post_userName">${themePost.user.nickName}</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="post_publishTime" >${themePost.timeDelay}</span>
+						<p class="post_gold">悬赏:<span>${themePost.gold}</span>金币</p>
+					</p>
+					
+				</div>
+				<div class="post_collect clearfix">
+					<button id="collect_btn" class="btn btn-success rf active">收藏</button>
+				</div>
+				<p class="post_content" readonly="readonly">帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+					
+				</p>
+			</div>
+			<div class="reply_posts">
+   				<div class="reply_post_head">
+   					<span class="line"></span>
+   					<span class="txt">回帖</span>
+   					<span class="line"></span>
+   				</div>
+   				<div class="reply_post_li">
+   					<ul>
+   						<li>
+   							<div class="reply_userInfo">
+								<a href="#"><img id="user_avatar" src="../../img/0.jpg"></a>
+								<p class="clearfix">
+									<a href="#"><span class="post_userName">用户名</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="post_publishTime" >2小时前</span>
+								</p>
+								<svg class="icon icon_size_40 " aria-hidden="true" >
+									<use xlink:href="#icon_yicaina"></use>
+								</svg>
+							</div>
+							<p class="post_content" contenteditable="false">
+								帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容帖子内容
+							</p>
+							<div class="reply_operation clearfix">
+								<a href="#">
+									<span class="post_likeNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_nogood"></use>
+										</svg>
+										1
+									</span>
+								</a>
+								<a href="#toReply">
+									<span class="post_replyNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_discuss"></use>
+										</svg>
+										12
+									</span>
+								</a>
+							</div>
+   						</li>
+   						<li>
+   							<div class="reply_userInfo">
+								<a href="#"><img id="user_avatar" src="../../img/0.jpg"></a>
+								<p class="clearfix">
+									<a href="#"><span class="post_userName">用户名2</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="post_publishTime" >2小时前</span>
+								</p>
+							</div>
+							<p class="post_content" contenteditable="false">
+								极度不适
+							</p>
+							<div class="reply_operation clearfix">
+								<a href="#">
+									<span class="post_likeNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_nogood"></use>
+										</svg>
+										1
+									</span>
+								</a>
+								<a href="#toReply">
+									<span class="post_replyNum rf">
+										<svg class="icon icon_size" aria-hidden="true" >
+											<use xlink:href="#icon_discuss"></use>
+										</svg>
+										12
+									</span>
+								</a>
+							</div>
+   						</li>
+   					</ul>
+   					<form action="#" >
+   					<a name = toReply></a>
+   						<div id="post_editor">
+						</div>
+			    		<script src="../../js/PostDetail.js"></script>
+			    		<input type="submit" id="submit_post" class="btn btn-success active" value="立即发布">
+   					</form>
+   				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -81,29 +81,39 @@ a,a:hover {
 }
 
 .user {
-	width:80px;
+	width:auto;
 	height:40px;
 	position: absolute;
-	left: 1150px;
+	left: 1200px;
 	text-align: center;
 	line-height: 60px;
 	opacity: .80;
 }
-.user a {
+.user a,.quit a {
 	color: #FFFFFF ;
 }
-.user:hover {
+.user:hover,.quit:hover {
+	cursor:pointer;
 	opacity: .99;
 }
 .avatar {
-	background-image: url("../img/0.jpg");
-	background-size: 100% 100%;
+	background-image:url("../img/0.jpg");
+	background-size:100% 100%;
 	width:40px;
 	height:40px;
 	position: absolute;
 	top:10px;
 	left: 1250px;
 	border-radius: 20px;
+}
+.quit {
+	width:auto;
+	height:40px;
+	position: absolute;
+	left: 1300px;
+	text-align: center;
+	line-height: 60px;
+	opacity: .80;
 }
 .top_container {
 	width: 100%;

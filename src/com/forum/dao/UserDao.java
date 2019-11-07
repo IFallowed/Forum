@@ -45,4 +45,12 @@ public interface UserDao {
 	 */
 	User getById(int id) throws SQLException;
 
+	/**
+	 * @Description: 
+	 * @Return Type:void
+	 * @param user 
+	 * @throws SQLException 
+	 */
+	void updateById(User user) throws SQLException;
+
 }

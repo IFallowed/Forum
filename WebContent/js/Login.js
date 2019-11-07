@@ -78,7 +78,7 @@ $(function () {
 				dataType:"json",
 				success:function(result){
 					if(result.code == "200"){
-						location.href = "index.html?userId=" + result.id;
+						location.href = "index.jsp?userId=" + result.id;
 					}
 					else if(result.code  == "202"){
 						$("#login_mail").siblings(".form_info").find("font").remove();

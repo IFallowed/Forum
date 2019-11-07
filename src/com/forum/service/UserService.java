@@ -4,6 +4,7 @@
  */
 package com.forum.service;
 
+import com.forum.entity.ThemePost;
 import com.forum.entity.User;
 import com.forum.exception.ForumException;
 
@@ -38,5 +39,14 @@ public interface UserService {
 	 * @throws ForumException 
 	 */
 	User getUserById(int id) throws ForumException;
+
+	/**
+	 * @Description: 除id,mail,gold以外的字段更新
+	 * @Return Type:void
+	 * @param user 
+	 */
+	void updateUser(User user);
+
+
 
 }

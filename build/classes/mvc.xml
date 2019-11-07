@@ -2,14 +2,34 @@
 <mvc>
 	<package name="user">
 		<action name="regist" class="userAction" method="regist">
-			<result name="success" type="stream">/Login.html</result>
+			<result name="success" type="stream">/Login.jsp</result>
 		</action>
 		<action name="login" class="userAction" method="login">
-			<result name="success" type="stream">/Login.html</result>
+			<result name="success" type="stream">/Login.jsp</result>
 		</action>
 		<action name="getUser" class="userAction" method="getUser">
-			<result name="success" type="stream">/index.html</result>
+			<result name="success" type="stream">/index.jsp</result>
 		</action>
-		
+		<action name="updateUser" class="userAction" method="updateUser">
+			<result name="success" type="stream">/UserSettings.jsp</result>
+		</action>
+		<action name="updatePwd" class="userAction" method="updatePwd">
+			<result name="success" type="stream">/UserSettings.jsp</result>
+		</action>
+		<action name="upAvatar" class="userAction" method="upAvatar">
+			<result name="success" type="stream">/UserSettings.jsp</result>
+		</action>
+	</package>
+	
+	<package name="theme">addOneThemePost
+		<action name="getThemePosts" class="themePostAction" method="getThemePosts">
+			<result name="success" type="stream">/index.jsp</result>
+		</action>
+		<action name="getOneThemePost" class="themePostAction" method="getOneThemePost">
+			<result name="success" type="stream">/index.jsp</result>
+		</action>
+		<action name="addOneThemePost" class="themePostAction" method="addOneThemePost">
+			<result name="success" type="stream">/index.jsp</result>
+		</action>
 	</package>
 </mvc>

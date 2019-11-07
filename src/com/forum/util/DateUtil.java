@@ -29,4 +29,42 @@ public class DateUtil {
 		}
 		return date; 
 	}
+	
+	public static String timeDelay(Date date,String pattern) {
+		long dateTime = date.getTime();
+		long nowTime = System.currentTimeMillis();
+		double timeDelay = nowTime - dateTime;
+		double time;
+		String str = null;
+		if(timeDelay < 60*1000) {
+			 time = Math.floor(timeDelay / 1000);
+			 str = String.valueOf(time).substring(0,String.valueOf(time).indexOf(".")) +"秒前";
+		}
+		else if(timeDelay < 60*1000*60) {
+			time = Math.floor(timeDelay / 60000);
+			str = String.valueOf(time).substring(0,String.valueOf(time).indexOf(".")) + "分钟前";
+		}
+		else if(timeDelay < 60*1000*60*24) {
+			time = Math.floor(timeDelay / (60*1000*60));
+			str = String.valueOf(time).substring(0,String.valueOf(time).indexOf(".")) + "小时前";
+		}
+		else if(timeDelay < 60*1000*60*24*30) {
+			time = Math.floor(timeDelay / (60*1000*60*24));
+			str = String.valueOf(time).substring(0,String.valueOf(time).indexOf(".")) + "天前";
+		}
+		else if(timeDelay < 60*1000*60*24*30*12){
+			time = Math.floor(timeDelay / (60*1000*60*24*30));
+			str = String.valueOf(time).substring(0,String.valueOf(time).indexOf(".")) + "个月前";
+		}
+		else {
+			time = Math.floor(timeDelay / (60*1000*60*24*30*12));
+			str = String.valueOf(time).substring(0,String.valueOf(time).indexOf(".")) + "年前";
+		}
+		return str;
+	}
+	
+	public static String timeDelay(String dateStr,String pattern) {
+		Date date = parseStrToDate(dateStr, pattern);
+		return timeDelay(date, pattern);
+	}
 }

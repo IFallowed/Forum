@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 	<bean id="tx" class="com.jdbc.util.Transaction" />
+	
 	<bean id="userDao" class="com.forum.dao.impl.UserDaoImpl" />
+	<bean id="themePostDao" class="com.forum.dao.impl.ThemePostDaoImpl" />
+	
 	<bean id="userService" class="com.forum.service.impl.UserServiceImpl">
 		<property name="tx" ref="tx"></property>
 		<property name="userDao" ref="userDao"></property>
 	</bean>
 	
+	<bean id="themePostService" class="com.forum.service.impl.ThemePostServiceImpl">
+		<property name="tx" ref="tx"></property>
+		<property name="themePostDao" ref="themePostDao"></property>
+	</bean>
+	
 	<bean id="userAction" class="com.forum.action.UserAction">
 		<property name="userService" ref="userService"></property>
+		<property name="themePostService" ref="themePostService"></property>
+	</bean>
+	
+	<bean id="themePostAction" class="com.forum.action.ThemePostAction">
+		<property name="userService" ref="userService"></property>
+		<property name="themePostService" ref="themePostService"></property>
 	</bean>
 </beans>
